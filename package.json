@@ -1,0 +1,17 @@
+{
+  "name": "mavie-ratings",
+  "version": "1.0.0",
+  "description": "Movie Ratings",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && sexit 1"
+  },
+  "author": "salat.kopp@gmail.com",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1"
+  }
+}
