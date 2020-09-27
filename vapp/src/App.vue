@@ -5,20 +5,20 @@
         <h1 class="display-1">Login</h1>
       </v-card-title>
       <v-card-text>
+    <div>
+    </div>
         <v-form>
-          <v-text-field label="Username" prepend-icon="mdi-account-circle" />
+          <v-text-field label="Movie" prepend-icon="mdi-movie" outlined />
           <v-text-field
-          label="Password" 
-          :type="showPassword ? 'text' : 'password'"
-          prepend-icon="mdi-lock"
-          :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
-          @click:append="toggleShowPassword" />
+          label="Year" 
+          type="number" 
+          outlined/>
         </v-form>
       </v-card-text>
       <v-card-actions>
-        <v-btn color="success">Register</v-btn>
         <v-spacer></v-spacer>
-        <v-btn color="info">Login</v-btn>
+        <v-btn color="success"
+          @click="registerMovie">Register</v-btn>
       </v-card-actions>
     </v-card>
   </v-app>
@@ -29,12 +29,11 @@ export default {
   name: 'App',
   
   data: () => ({
-    showPassword: false,
   }),
 
   methods: {
-    toggleShowPassword: function() {
-      this.showPassword = !this.showPassword;
+    registerMovie: function() {
+      console.log('register');
     }
   }
 };
